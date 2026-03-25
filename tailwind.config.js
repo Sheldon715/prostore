@@ -14,8 +14,10 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          // Keep button/main brand color controlled in tailwind theme
+          // so you can tweak it without touching globals.css.
+          DEFAULT: "#111827",
+          foreground: "#f9fafb",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
